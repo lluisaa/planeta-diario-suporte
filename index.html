@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Página de suporte do Planeta Diário." />
+    <title>Planeta Diário - Suporte</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --card: rgba(255, 255, 255, 0.88);
+        --text: #13213c;
+        --muted: #5f6f8a;
+        --accent: #2143ab;
+        --line: rgba(33, 67, 171, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(33, 67, 171, 0.14), transparent 34%),
+          linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      main {
+        width: min(100%, 760px);
+      }
+
+      .panel {
+        background: var(--card);
+        border: 1px solid rgba(19, 33, 60, 0.08);
+        border-radius: 28px;
+        box-shadow: 0 20px 60px rgba(19, 33, 60, 0.08);
+        overflow: hidden;
+        backdrop-filter: blur(16px);
+      }
+
+      .hero {
+        padding: 34px 28px 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--accent);
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+      }
+
+      .subtitle {
+        margin: 16px 0 0;
+        max-width: 58ch;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      .content {
+        padding: 28px;
+        display: grid;
+        gap: 18px;
+      }
+
+      .box {
+        border: 1px solid rgba(19, 33, 60, 0.08);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+      }
+
+      .box h2 {
+        margin: 0 0 10px;
+        font-size: 1.05rem;
+      }
+
+      .box p,
+      .box li {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .box ul {
+        margin: 0;
+        padding-left: 18px;
+        display: grid;
+        gap: 8px;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .email {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+        word-break: break-word;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(33, 67, 171, 0.1);
+        color: var(--accent);
+        font-size: 0.92rem;
+        font-weight: 700;
+      }
+
+      footer {
+        padding: 0 28px 28px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 14px;
+        }
+
+        .hero,
+        .content,
+        footer {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel" aria-label="Suporte do Planeta Diário">
+        <header class="hero">
+          <p class="eyebrow">Suporte oficial</p>
+          <h1>Planeta Diário</h1>
+          <p class="subtitle">
+            Canal oficial de ajuda para dúvidas, sugestões, correções e suporte técnico do app.
+            Se você tiver qualquer problema com notícias, boletins, indicadores ou exportação em PDF,
+            fale comigo por aqui.
+          </p>
+        </header>
+
+        <section class="content">
+          <div class="box">
+            <h2>Contato</h2>
+            <div class="contact">
+              <a class="email" href="mailto:luisa.tomioka@gmail.com?subject=Suporte%20Planeta%20Di%C3%A1rio">
+                luisa.tomioka@gmail.com
+              </a>
+              <span class="pill">Resposta direta por e-mail</span>
+            </div>
+          </div>
+
+          <div class="box">
+            <h2>O que você pode enviar</h2>
+            <ul>
+              <li>Problemas ao abrir o app ou atualizar as notícias.</li>
+              <li>Erros na criação ou exportação de boletins em PDF.</li>
+              <li>Sugestões de melhoria e ajustes visuais.</li>
+              <li>Relatos sobre indicadores, filtros ou fontes que não carregaram corretamente.</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h2>Sobre o app</h2>
+            <p>
+              O Planeta Diário reúne notícias e indicadores econômicos em um app leve, organizado e feito para leitura rápida no celular.
+            </p>
+          </div>
+        </section>
+
+        <footer>
+          Última atualização da página: agosto de 2026.
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
