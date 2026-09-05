@@ -4,6 +4,7 @@ Esta pasta contém a página pública de suporte usada para o campo `Support URL
 
 Arquivo principal:
 - `index.html`
+- `privacidade/index.html` — política pública usada pelo app e pelas lojas.
 
 Uso recomendado no GitHub Pages:
 1. Publique este conteúdo em um repositório GitHub.
